@@ -38,23 +38,23 @@ Follow these steps to set up your Python development environment and install Vis
 Now you're all set up to start coding with Python using VS Code!
 
 
-create virtual env `python3 -m venv venv`
-Activate: `source venv/bin/activate`
-Install FastAPI `pip install "fastapi[all]"`
-Check all packages installed `pip freeze`
-Run the live server: `uvicorn main:app --reload`
-Main.py is the entry point of our application
-Open `http://127.0.0.1:8000/`
-Interactive API docs Now go to `http://127.0.0.1:8000/docs`
-Alternative API docs: `http://127.0.0.1:8000/redoc`
-Check schema `http://127.0.0.1:8000/openapi.json`
+1. create virtual env `python3 -m venv venv`
+2. Activate: `source venv/bin/activate`
+3. Install FastAPI `pip install "fastapi[all]"`
+4. Check all packages installed `pip freeze`
+5. Run the live server: `uvicorn main:app --reload`
+6. Main.py is the entry point of our application
+7. Open `http://127.0.0.1:8000/`
+8. Interactive API docs Now go to `http://127.0.0.1:8000/docs`
+9. Alternative API docs: `http://127.0.0.1:8000/redoc`
+10. Check schema `http://127.0.0.1:8000/openapi.json`
 
-Below is route, A "path" / is also commonly called an "endpoint" or a "route". 
-The @app.get("/") tells FastAPI that the function right below is in charge of handling requests that go to:
-Instance `app` = FastAPI()
-Decorator `@app`.get("/")
-http method is @app.`get`("/")
-Function name async def `root`(): you can chnage root to a descriptive function name to whatever, like login_user
+1. Below is route, A "path" / is also commonly called an "endpoint" or a "route". 
+2. The @app.get("/") tells FastAPI that the function right below is in charge of handling requests that go to:
+3. Instance `app` = FastAPI()
+4. Decorator `@app`.get("/")
+5. http method is @app.`get`("/")
+6. Function name async def `root`(): you can chnage root to a descriptive function name to whatever, like login_user
 
 ```bash
 app = FastAPI()
