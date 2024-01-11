@@ -49,6 +49,7 @@ Now you're all set up to start coding with Python using VS Code!
 9. Alternative API docs: `http://127.0.0.1:8000/redoc`
 10. Check schema `http://127.0.0.1:8000/openapi.json`
 
+## Understanding FASTAPI 
 1. Below is route, A "path" / is also commonly called an "endpoint" or a "route". 
 2. The @app.get("/") tells FastAPI that the function right below is in charge of handling requests that go to:
 3. Instance `app` = FastAPI()
